@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  vertical-align: middle;
+
+}
+h1 {
+  padding: 20px;
+  justify-content: center;
+  height: 100px;
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #ffffff, #df79ad);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: 100px;
+}
+section{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);;
+  background-size: 400% 400%;
+  position: relative;
+  animation: animate 3.5s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+section #h1{
+  color: #fff;
+  background: rgba(255,255,255,.2);
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 10px;
+  height: 40px;
+}
+section h2{
+  color: #fff;
+  
+}
+
+@keyframes animate{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+/* -------------------------------------- */
+
+#correct {
+  height: 20px;
+  width: 150px;
+}
+
+/* 12.20 서현 수정 */
+::placeholder { 
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+/* 
+:placeholder-shown{
+  height: 40px;
+  width: 250px;
+  border-style: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,.2);
+} */
+input{
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  height: 40px;
+  width: 230px;
+  border-style: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,.2);
+  padding-left: 20px;
+}
+
+
+
+
