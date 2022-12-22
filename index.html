@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.1.min.js"></script>
+    
+    <script src="problem.js"></script>
+    <script src="game.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function local(a) {
+            
+        localStorage.setItem('name', a);
+
+        }
+        
+        function work() {
+            let name = document.getElementById('name').value;   
+            let content ="qq"
+            if((name.trim())!="") {
+                local(name)
+                location.href='game.html'
+                
+            }
+            else{
+                alert("이름을 입력해주세요")
+            }
+            
+        }
+         
+        
+        </script>
+    <title>BACKTIK</title>
+</head>
+<body>
+    <section>
+        <h1>Jumbled Sentence Quiz</h1>
+        <div id="header">
+            <h2 style="margin-bottom: 50px;">CLICK START TO PLAY GAME</h3>
+            <!-- <h3>Enter your name below</h3> -->
+            <input type="text" id="name" placeholder="Enter your name here">
+       <button id="h1" onclick="work()" style="border-style: none;">START</button>
+    </section>
+    
+</body>
+
+</html>
